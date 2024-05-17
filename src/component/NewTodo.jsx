@@ -16,7 +16,7 @@ export default function NewTodo({ addTodo , darkMode }) {
       <form onSubmit={handleSubmit} className='w-full'>
         <input
           type="text" 
-          className={`w-full px-2`}
+          className={`w-full px-2 ${darkMode ? 'bg-[#25273C]' : 'bg-white'}`}
           placeholder='Create New Todo...'
           onChange={(e)=>{setTodo(e.target.value)}}
           value={todo}
